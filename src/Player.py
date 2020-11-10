@@ -95,9 +95,10 @@ class Player:
         """
         try:
             self.driver.find_element_by_class_name("style-scope ytd-compact-radio-renderer").click()
+            return True
         except NoSuchElementException:
             return False
-        return True
+        
 
     def get_playlist(self):
         """
